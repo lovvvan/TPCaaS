@@ -18,7 +18,7 @@ runcmd:
  - apt-get install -y git
  - cd /home/ubuntu
  - git clone https://github.com/lovvvan/TPCaaS.git
- - cd TPCaaS
+ - cd TPCaaS/"Twitter pronoun counter as a Service"
  - git clone https://github.com/lovvvan/tweet_pronoun_files.git
  - apt-get install -y python3-pip
  - pip install --upgrade pip
