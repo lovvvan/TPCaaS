@@ -14,20 +14,20 @@ runcmd:
  - add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
  - apt-get update
  - apt-get install -y docker-ce
+ - apt-get install -y docker-compose
  - apt-get -y upgrade
  - apt-get install -y git
  - cd /home/ubuntu
  - git clone https://github.com/lovvvan/TPCaaS.git
- - cd TPCaaS/"Twitter pronoun counter as a Service"
+ - cd TPCaaS/app
  - git clone https://github.com/lovvvan/tweet_pronoun_files.git
  - apt-get install -y python3-pip
  - pip install --upgrade pip
  - pip install flask
  - pip install celery
- - apt-get install -y rabbitmq-server
- - systemctl enable rabbitmq-server
- - systemctl start rabbitmq-server
  - pip install termgraph
+ - pip install -y flower
+ - docker run -d -p 5672:5672 --hostname my-rabbit --name some-rabbit rabbitmq:3 
  - python3 pronoun_counter.py &
  - celery -A tasks worker --loglevel=INFO
  
