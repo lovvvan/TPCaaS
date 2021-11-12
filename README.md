@@ -59,6 +59,6 @@ curl -i http://<your-floating-ip>:5000/pronoun_counter
 After waiting for the celery worker to count the pronouns (roughly about 2.5 minutes) the
 TPCaaS will give the user the output seen below.
   
-  ![Bar chart showing the numbers of times the different pronouns occur in the tweets](https://github.com/lovvvan/TPCaaS/blob/main/ResultFromTPCaaS.png?raw=true)
+  ![Bar chart showing the numbers of times the different pronouns occur in the tweets](https://github.com/lovvvan/TPCaaS/blob/main/ResultFromTPCaaS.PNG?raw=true)
 
 
