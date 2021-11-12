@@ -20,6 +20,6 @@ created. Rabbitmq, celery and the scripts that make up the TPCaaS are then start
 
 To start the service, first clone the github repo:
 
-´´´shell
+```shell
 git clone https://github.com/lovvvan/TPCaaS.git
-´´´
+```
